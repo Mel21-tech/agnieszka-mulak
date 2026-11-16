@@ -5,24 +5,37 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var darkMq = window.matchMedia('(prefers-color-scheme: dark)');
   var root = document.getElementById('am-root');
-  var wipe = document.querySelector('.am-wipe');
-
-  /* ---------- Transition entre les pages ---------- */
-  // Au clic sur un lien interne : la vague recouvre l'écran, puis on change de page.
-  document.addEventListener('click', function (e) {
-    var a = e.target.closest('a[href]');
-    if (!a || reduce || !wipe) return;
-    var href = a.getAttribute('href');
-    if (!/^[\w-]+\.html(#.*)?$/.test(href)) return;
-    if (e.metaKey || e.ctrlKey || e.shiftKey || a.target === '_blank') return;
-    e.preventDefault();
-    wipe.style.animation = 'am-wipe-enter .65s cubic-bezier(.77,0,.18,1) forwards';
-    setTimeout(function () { window.location.href = href; }, 620);
-  });
-  // Retour arrière (cache du navigateur) : on retire la vague.
-  window.addEventListener('pageshow', function (e) {
-    if (e.persisted && wipe) wipe.style.animation = 'am-wipe 1s cubic-bezier(.77,0,.18,1) forwards';
-  });
+  
+  /* ---------- Navigation entre les onglets (sans rechargement) ---------- */
+  var views = Array.prototype.slice.call(document.querySelectorAll('[data-view]'));
+  var navLinks = document.querySelectorAll('header nav a[href^="#"]');
+  var current = null;
+  function show(hash) {
+    var id = (hash || '').replace('#', '') || 'accueil';
+    var target = document.getElementById(id);
+    if (!target) return;
+    var view = target.closest('[data-view]') || target;
+    var viewName = view.getAttribute('data-view');
+    if (viewName !== current) {
+      views.forEach(function (v) { v.hidden = v !== view; });
+      // relance le fondu
+      view.style.animation = 'none'; void view.offsetWidth; view.style.animation = '';
+      current = viewName;
+      document.title = view.getAttribute('data-title');
+      var r = document.getElementById('am-root');
+      if (r) r.style.backgroundColor = view.getAttribute(darkMq.matches ? 'data-view-tint-dark' : 'data-view-tint');
+      navLinks.forEach(function (l) {
+        if (l.getAttribute('href') === '#' + viewName) l.setAttribute('aria-current', 'page');
+        else l.removeAttribute('aria-current');
+      });
+    }
+    if (target === view) window.scrollTo(0, 0);
+    else target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+  }
+  if (views.length) {
+    window.addEventListener('hashchange', function () { show(location.hash); });
+    show(location.hash);
+  }
 
   /* ---------- Formulaire de contact (ouvre l'app mail) ---------- */
   var form = document.getElementById('am-form');
@@ -45,7 +58,7 @@
       entries.forEach(function (en) {
         if (!en.isIntersecting) return;
         en.target.classList.add('in');
-        en.target.querySelectorAll('[data-reveal-blob], [data-reveal]').forEach(function (b) { b.classList.add('in'); });
+        en.target.querySelectorAll('[data-reveal-blob]').forEach(function (b) { b.classList.add('in'); });
         io.unobserve(en.target);
       });
     }, { threshold: 0.12 });
