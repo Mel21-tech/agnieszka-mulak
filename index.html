@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Agnieszka Mulak – Art-thérapeute à Meylan</title>
+<meta name="description" content="Agnieszka Mulak, art-thérapeute certifiée à Meylan près de Grenoble : art-thérapie adultes, enfants, familles, accompagnement face au cancer. Premier appel de 30 min offert.">
+<meta property="og:title" content="Agnieszka Mulak – Art-thérapeute à Meylan">
+<meta property="og:description" content="Agnieszka Mulak, art-thérapeute certifiée à Meylan près de Grenoble : art-thérapie adultes, enfants, familles, accompagnement face au cancer. Premier appel de 30 min offert.">
+<meta property="og:image" content="assets/sphere.jpg">
+<meta property="og:locale" content="fr_FR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#F5EDF8}
+a{color:#6B3FA0}a:hover{color:#4A2A75}
+input,select,textarea,button{font:inherit}
+@media (pointer:fine){.am-root,.am-root a,.am-root button,.am-root canvas{cursor:url(assets/goutte.svg) 14 4, auto}}
+.am-root{color:#2B1B33;transition:background-color 1.4s ease}
+.am-blob{position:absolute;border-radius:50%;filter:blur(48px);pointer-events:none;opacity:.55;transition:opacity 1.6s ease, transform 2.4s ease}
+.am-anim .am-blob{opacity:0;transform:scale(.6)}
+.am-anim .am-blob.in{opacity:.55;transform:scale(1)}
+.am-anim [data-reveal]{opacity:0;transform:translateY(24px);clip-path:inset(0 100% 0 0);transition:opacity .9s ease, transform .9s ease, clip-path 1.2s cubic-bezier(.7,0,.2,1)}
+.am-anim [data-reveal].in{opacity:1;transform:none;clip-path:inset(0 0 0 0)}
+.am-brush{background-image:linear-gradient(100deg, rgba(217,101,63,0) 0%, rgba(217,101,63,.38) 8%, rgba(142,59,118,.32) 92%, rgba(142,59,118,0) 100%);background-repeat:no-repeat;background-position:0 88%;background-size:100% 38%;transition:background-size 1.4s cubic-bezier(.7,0,.2,1) .5s;padding:0 .08em}
+.am-anim .am-brush{background-size:0% 38%}
+.am-anim .in .am-brush{background-size:100% 38%}
+@keyframes am-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.am-track{display:flex;gap:20px;width:max-content;animation:am-marquee 48s linear infinite}
+.am-track:hover{animation-play-state:paused}
+@keyframes am-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.am-float{animation:am-float 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.am-track,.am-float{animation:none}.am-anim [data-reveal],.am-anim .am-blob{opacity:1;transform:none;clip-path:none}.am-brush{background-size:100% 38%!important}}
+
+html{scroll-behavior:smooth}
+[style*="justify-content: space-between"]>strong{white-space:nowrap}
+:root{--am-bg:#F5EDF8}
+.am-wipe{position:fixed;top:-10%;bottom:-10%;left:-15%;width:130%;z-index:100;pointer-events:none;background:radial-gradient(circle at 25% 30%, rgba(180,138,224,.9), rgba(180,138,224,0) 40%),radial-gradient(circle at 70% 65%, rgba(242,160,126,.85), rgba(242,160,126,0) 45%),radial-gradient(circle at 55% 20%, rgba(127,209,200,.5), rgba(127,209,200,0) 35%),linear-gradient(115deg,#4A2A75,#8E3B76 55%,#C4543A);border-radius:0 45% 45% 0 / 0 55% 55% 0;animation:am-wipe 1.15s cubic-bezier(.77,0,.18,1) .05s forwards}
+@keyframes am-wipe{from{transform:translateX(0)}to{transform:translateX(115%)}}
+.am-page{animation:am-in .9s ease .45s both}
+@keyframes am-in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.am-wipe{display:none}.am-page{animation:none}html{scroll-behavior:auto}}
+@media (prefers-color-scheme:dark){
+:root{--am-bg:#1E1326}
+body{background:#1E1326}
+.am-root{color:#F3E9F6}
+a{color:#C9A6F0}a:hover{color:#E3CCF8}
+[style*="color: #2B1B33"]{color:#F3E9F6!important}
+[style*="background: #FFFFFF"]{background:#2A1D33!important}
+[style*="background: #2B1B33"]{background:#120A17!important}
+[style*="rgba(250,244,251"]{background:rgba(30,19,38,.85)!important}
+[style*="rgba(255,255,255,.6)"]{background:rgba(42,29,51,.6)!important}
+[style*="color: #4A3A52"]{color:#CDBFD6!important}
+[style*="color: #5C4A63"]{color:#B8A8C2!important}
+[style*="color: #6B3FA0"]{color:#C9A6F0!important}
+[style*="color: #8E3B76"]{color:#E7A6CF!important}
+[style*="color: #B04A2B"],[style*="color: #C4543A"]{color:#F2A884!important}
+[style*="color: #A8730E"]{color:#EBC15A!important}
+[style*="#EEE3EC"]{border-color:#3D2C47!important}
+[style*="solid #2B1B33"]{border-color:#F3E9F6!important}
+[style*="background: #EDE2EE"]{background:#2A1D33!important}
+[style*="rgba(107,63,160,0.12)"]{border-color:#3D2C47!important}
+[style*="linear-gradient(180deg, #F5EDF8"]{background:linear-gradient(180deg,#1E1326 0%,#23142A 40%,#28152A 75%,#2A1824 100%)!important}
+.am-blob{mix-blend-mode:screen}
+}
+
+@keyframes am-wipe-enter{from{transform:translateX(-115%)}to{transform:translateX(0)}}
+.am-quiz-btn{min-height:48px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:16px;cursor:pointer;transition:all .3s ease;background:rgba(255,255,255,.75);color:#2B1B33;border:1.5px solid rgba(107,63,160,.35)}
+.am-quiz-btn[aria-pressed="true"]{background:linear-gradient(100deg,#6B3FA0,#8E3B76);color:#FFFFFF;border-color:transparent;box-shadow:0 10px 24px -12px rgba(107,63,160,.8)}
+.am-swatch{width:48px;height:48px;border-radius:50%;cursor:pointer;background:var(--c);border:3px solid #FFFFFF;box-shadow:0 6px 16px -6px rgba(43,27,51,.5);transition:transform .2s ease}
+.am-swatch[aria-pressed="true"]{border-color:#2B1B33;transform:scale(1.12)}
+.am-result{animation:am-in .6s ease both}
+@media (prefers-color-scheme:dark){
+.am-quiz-btn{background:rgba(42,29,51,.8);color:#F3E9F6;border-color:rgba(201,166,240,.4)}
+.am-swatch{border-color:#2A1D33}.am-swatch[aria-pressed="true"]{border-color:#F3E9F6}
+}
+</style>
+</head>
+<body>
+<div class="am-root am-page" id="am-root" style="font-family: 'Figtree', system-ui, sans-serif; background-color: var(--am-bg); font-size: 17px; line-height: 1.6; width: 100%; position: relative; overflow-x: hidden">
+<div class="am-wipe" aria-hidden="true"></div>
+
+<canvas id="am-trail" aria-hidden="true" style="position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 40"></canvas>
+
+<!-- PROCHAINES DATES -->
+<div style="background: linear-gradient(90deg, #4A2A75, #8E3B76 55%, #C4543A); color: #FFFFFF; font-size: 14px; padding: 10px 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 28px; text-align: center">
+<span><strong>Prochain cercle créatif féminin :</strong> [date]</span>
+<span><strong>Prochaine Rando'Art-thérapie :</strong> [date]</span>
+<a href="tel:+33674352677" style="color: #FFFFFF; font-weight: 600">Réserver ma place</a>
+</div>
+
+<!-- HEADER -->
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(250,244,251,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(107,63,160,0.12)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
+<a href="index.html" style="text-decoration: none; color: #2B1B33; display: flex; flex-direction: column; line-height: 1.15">
+<span style="font-family: 'Fraunces', serif; font-size: 24px; font-weight: 500">Agnieszka <span style="font-style: italic; color: #8E3B76">Mulak</span></span>
+<span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #5C4A63">Art-thérapeute · Meylan</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 26px; font-size: 16px; font-weight: 500">
+<a href="accompagnements.html" style="color: #2B1B33; text-decoration: none">Accompagnements &amp; tarifs</a>
+<a href="histoire.html" style="color: #2B1B33; text-decoration: none">Mon histoire</a>
+<a href="infos.html" style="color: #2B1B33; text-decoration: none">Infos pratiques</a>
+<a href="#contact" style="background: #6B3FA0; color: #FFFFFF; text-decoration: none; padding: 12px 22px; border-radius: 999px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Réserver une séance</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section data-tint="#F5EDF8" data-tint-dark="#1E1326" style="position: relative; overflow: hidden">
+<div class="am-blob" data-reveal-blob="" style="width: 520px; height: 520px; background: radial-gradient(circle, #B48AE0, rgba(180,138,224,0) 70%); top: -120px; right: 8%"></div>
+<div class="am-blob" data-reveal-blob="" style="width: 420px; height: 420px; background: radial-gradient(circle, #F2A07E, rgba(242,160,126,0) 70%); bottom: -140px; left: -80px"></div>
+<div class="am-blob" data-reveal-blob="" style="width: 300px; height: 300px; background: radial-gradient(circle, #7FD1C8, rgba(127,209,200,0) 70%); top: 40%; right: -60px"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 80px 24px 88px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<span style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #8E3B76; font-weight: 600">Art-thérapeute certifiée · Artiste peintre · Meylan, près de Grenoble</span>
+<h1 data-reveal="" style="margin: 0; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2.6rem, 5.4vw, 4.8rem); line-height: 1.04; letter-spacing: -0.02em">Exprimer ce que les mots <span class="am-brush" style="font-style: italic; color: #6B3FA0">ne disent pas.</span></h1>
+<p style="margin: 0; font-size: 20px; color: #4A3A52; max-width: 560px">Un espace doux et sans jugement pour déposer vos émotions par la couleur, le geste et la création. Adultes, enfants et familles, au cabinet ou à domicile.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#contact" style="background: linear-gradient(100deg, #6B3FA0, #8E3B76); color: #FFFFFF; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 17px; box-shadow: 0 12px 30px -12px rgba(107,63,160,.7)">Réserver une séance</a>
+<a href="tel:+33674352677" style="background: rgba(255,255,255,.6); color: #2B1B33; text-decoration: none; padding: 15px 27px; border-radius: 999px; font-weight: 600; font-size: 17px; border: 1.5px solid #2B1B33">Premier appel offert · 30 min</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 14px 28px; padding-top: 14px; border-top: 1px solid rgba(107,63,160,0.18); font-size: 15px; color: #4A3A52">
+<span><strong style="color: #2B1B33; font-size: 18px">4,9/5</strong> · 71 avis Google</span>
+<span>Intervenante au <strong style="color: #2B1B33">CHU Grenoble Alpes</strong></span>
+<span>Bus C3 · Parking gratuit</span>
+</div>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; justify-content: center; position: relative">
+<div class="am-float" style="width: min(100%, 470px); aspect-ratio: 1 / 1; position: relative">
+<div id="am-sphere" style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; box-shadow: 0 40px 90px -24px rgba(142,59,118,0.55), 0 0 0 10px rgba(255,255,255,.5); will-change: transform">
+<img src="assets/sphere.jpg" alt="Toile d'Agnieszka Mulak : spirale de couleurs chaudes et violettes" style="width: 112%; height: 112%; margin: -6%; object-fit: cover; display: block">
+</div>
+</div>
+<span style="position: absolute; bottom: 2%; left: 0; background: #FFFFFF; border-radius: 16px; padding: 12px 18px; font-family: 'Fraunces', serif; font-style: italic; font-size: 17px; box-shadow: 0 12px 30px -10px rgba(43,27,51,0.25)">« Je vous accompagne dans la couleur de votre vie. »</span>
+</div>
+</div>
+</section>
+
+<!-- QUIZ -->
+<section data-tint="#F7EAF2" data-tint-dark="#23142A" style="position: relative; overflow: hidden">
+<div class="am-blob" data-reveal-blob="" style="width: 380px; height: 380px; background: radial-gradient(circle, #E59BC0, rgba(229,155,192,0) 70%); top: -80px; left: 30%"></div>
+<div style="position: relative; max-width: 1000px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 28px; align-items: center; text-align: center">
+<span style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #8E3B76; font-weight: 600">Trouver mon accompagnement</span>
+<h2 data-reveal="" style="margin: 0; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2rem, 3.8vw, 3.3rem); line-height: 1.1">Qu'est-ce qui vous <span class="am-brush" style="font-style: italic; color: #6B3FA0">amène</span> ?</h2>
+<div role="group" aria-label="Choisissez ce qui vous correspond" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+<button type="button" class="am-quiz-btn" data-quiz="emotions" aria-pressed="false">Me sentir mieux, gérer mes émotions</button>
+<button type="button" class="am-quiz-btn" data-quiz="enfant" aria-pressed="false">Aider mon enfant</button>
+<button type="button" class="am-quiz-btn" data-quiz="maladie" aria-pressed="false">Traverser une maladie</button>
+<button type="button" class="am-quiz-btn" data-quiz="famille" aria-pressed="false">Un moment en famille</button>
+<button type="button" class="am-quiz-btn" data-quiz="peindre" aria-pressed="false">Apprendre à peindre</button>
+</div>
+
+<div id="am-result" class="am-result" hidden aria-live="polite" style="width: 100%; max-width: 760px; background: #FFFFFF; border-radius: 28px; padding: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px; text-align: left; box-shadow: 0 30px 60px -30px rgba(107,63,160,.45)">
+<img id="am-r-img" src="assets/p_wall.jpg" alt="" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; flex: 0 0 auto">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #8E3B76; font-weight: 600">Je vous propose</span>
+<strong id="am-r-title" style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; line-height: 1.2"></strong>
+<span style="color: #4A3A52" id="am-r-text"></span>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; padding-top: 6px">
+<strong style="font-size: 18px" id="am-r-price"></strong>
+<a href="#contact" style="background: #6B3FA0; color: #FFFFFF; text-decoration: none; padding: 11px 20px; border-radius: 999px; font-weight: 600">Réserver</a>
+<a href="accompagnements.html" style="font-weight: 600">En savoir plus →</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- 3 FICHES -->
+<section data-tint="#F9E9EC" data-tint-dark="#28152A" style="position: relative; overflow: hidden">
+<div class="am-blob" data-reveal-blob="" style="width: 460px; height: 460px; background: radial-gradient(circle, #F2A07E, rgba(242,160,126,0) 70%); bottom: -160px; right: 10%"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 88px 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 20px 64px; align-items: flex-end; margin-bottom: 40px">
+<h2 data-reveal="" style="margin: 0; flex: 1 1 420px; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2rem, 3.8vw, 3.3rem); line-height: 1.1">Chaque séance <span class="am-brush" style="font-style: italic; color: #8E3B76">a sa couleur</span></h2>
+<a href="accompagnements.html" style="font-weight: 600; font-size: 17px">Voir tous les accompagnements et tarifs →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px">
+<a href="accompagnements.html" style="text-decoration: none; color: #2B1B33; background: #FFFFFF; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column">
+<img src="assets/p_blue.jpg" alt="Agnieszka peint une grande toile bleue et violette" style="width: 100%; height: 220px; object-fit: cover; display: block">
+<div style="padding: 26px 28px 30px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #6B3FA0; font-weight: 600">Individuel</span>
+<strong style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; line-height: 1.2">Art-thérapie adultes, ados et enfants</strong>
+<span style="color: #4A3A52">Aussi : accompagnement face au cancer, body painting, mobilité réduite.</span>
+<span style="margin-top: auto; padding-top: 12px; font-size: 18px"><span style="color: #5C4A63">dès</span> <strong>50 €</strong></span>
+</div>
+</a>
+<a href="accompagnements.html" style="text-decoration: none; color: #2B1B33; background: #FFFFFF; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column">
+<img src="assets/parents.jpg" alt="Une grand-mère et son petit-fils peignent ensemble" style="width: 100%; height: 220px; object-fit: cover; display: block">
+<div style="padding: 26px 28px 30px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #8E3B76; font-weight: 600">En duo</span>
+<strong style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; line-height: 1.2">Atelier parents ou grands-parents &amp; enfants</strong>
+<span style="color: #4A3A52">Peindre ensemble, matériel inclus, pour renforcer les liens.</span>
+<span style="margin-top: auto; padding-top: 12px; font-size: 18px"><strong>95 €</strong> <span style="color: #5C4A63">le duo</span></span>
+</div>
+</a>
+<a href="accompagnements.html" style="text-decoration: none; color: #2B1B33; background: #FFFFFF; border-radius: 28px; overflow: hidden; display: flex; flex-direction: column">
+<img src="assets/cercle.jpg" alt="Un cercle de femmes écrit autour d'une table décorée de fleurs" style="width: 100%; height: 220px; object-fit: cover; display: block">
+<div style="padding: 26px 28px 30px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+<span style="font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #B04A2B; font-weight: 600">En groupe</span>
+<strong style="font-family: 'Fraunces', serif; font-weight: 500; font-size: 26px; line-height: 1.2">Cercles créatifs, rando &amp; cours de peinture</strong>
+<span style="color: #4A3A52">Se ressourcer entre femmes, en pleine nature ou au chevalet.</span>
+<span style="margin-top: auto; padding-top: 12px; font-size: 18px"><span style="color: #5C4A63">dès</span> <strong>40 €</strong> <span style="color: #5C4A63">/ pers.</span></span>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- GALERIE DEFILANTE -->
+<section data-tint="#FAEAE3" data-tint-dark="#2A1824" aria-label="Galerie des toiles" style="padding: 72px 0; overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto 32px; padding: 0 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px">
+<h2 data-reveal="" style="margin: 0; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2rem, 3.8vw, 3.3rem); line-height: 1.1">L'atelier <span class="am-brush" style="font-style: italic; color: #C4543A">en couleurs</span></h2>
+<span style="color: #5C4A63">Survolez pour mettre en pause</span>
+</div>
+<div class="am-track">
+<img src="assets/sphere.jpg" alt="Toile en spirale, tons chauds et violets" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_blue.jpg" alt="Agnieszka devant une toile bleue et violette" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_sun.jpg" alt="Toile au soleil jaune et rose" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_histoire.jpg" alt="Toile abstraite turquoise et violette" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_wall.jpg" alt="Grande toile bleue au mur du cabinet" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_cours.jpg" alt="Cours de peinture au cabinet" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_enfant.jpg" alt="Peinture d'enfant en rose et vert" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_atelier.jpg" alt="Pinceaux et palette de l'atelier" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/sphere.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_blue.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_sun.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_histoire.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_wall.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_cours.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_enfant.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+<img src="assets/p_atelier.jpg" alt="" aria-hidden="true" loading="lazy" style="height: 300px; width: auto; border-radius: 22px; display: block; box-shadow: 0 20px 40px -24px rgba(43,27,51,.5)">
+
+</div>
+</section>
+
+<!-- MINI ATELIER -->
+<section data-tint="#F7E8EF" data-tint-dark="#26152A" style="position: relative; overflow: hidden">
+<div class="am-blob" data-reveal-blob="" style="width: 420px; height: 420px; background: radial-gradient(circle, #B48AE0, rgba(180,138,224,0) 70%); top: -100px; right: -80px"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 18px">
+<span style="font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #8E3B76; font-weight: 600">À vous de jouer</span>
+<h2 data-reveal="" style="margin: 0; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2rem, 3.8vw, 3.3rem); line-height: 1.1">Votre première <span class="am-brush" style="font-style: italic; color: #6B3FA0">touche de couleur</span></h2>
+<p style="margin: 0; color: #4A3A52">Choisissez une teinte et laissez aller votre main, sans réfléchir. C'est exactement l'esprit d'une séance : pas de beau ni de mauvais dessin.</p>
+<div role="group" aria-label="Couleurs" style="display: flex; flex-wrap: wrap; gap: 10px">
+<button type="button" class="am-swatch" data-color="#6B3FA0" style="--c: #6B3FA0" aria-label="Violet" aria-pressed="true"></button>
+<button type="button" class="am-swatch" data-color="#8E3B76" style="--c: #8E3B76" aria-label="Prune" aria-pressed="false"></button>
+<button type="button" class="am-swatch" data-color="#E07BA8" style="--c: #E07BA8" aria-label="Rose" aria-pressed="false"></button>
+<button type="button" class="am-swatch" data-color="#D9653F" style="--c: #D9653F" aria-label="Orange brûlé" aria-pressed="false"></button>
+<button type="button" class="am-swatch" data-color="#E8A33D" style="--c: #E8A33D" aria-label="Safran" aria-pressed="false"></button>
+<button type="button" class="am-swatch" data-color="#2A9D95" style="--c: #2A9D95" aria-label="Turquoise" aria-pressed="false"></button>
+</div>
+<button type="button" id="am-clear" style="align-self: flex-start; background: transparent; border: 1.5px solid #2B1B33; color: #2B1B33; border-radius: 999px; padding: 11px 22px; font-weight: 600; min-height: 44px; cursor: pointer">Recommencer</button>
+</div>
+<div style="flex: 1.4 1 480px; min-width: 0">
+<canvas id="am-paint" role="img" aria-label="Zone de peinture libre" style="width: 100%; height: 380px; display: block; background: #FFFDF9; border-radius: 28px; box-shadow: inset 0 0 0 1px rgba(107,63,160,.15), 0 30px 60px -30px rgba(107,63,160,.4); touch-action: none"></canvas>
+</div>
+</div>
+</section>
+
+<!-- AVIS -->
+<section data-tint="#F3EAF6" data-tint-dark="#21152B" style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: stretch">
+<figure style="margin: 0; flex: 2 1 560px; min-width: 0; background: linear-gradient(135deg, #4A2A75, #8E3B76 70%, #B04A5B); color: #FFFFFF; border-radius: 28px; padding: 44px; display: flex; flex-direction: column; justify-content: space-between; gap: 24px">
+<blockquote style="margin: 0; font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(1.4rem, 2.4vw, 2rem); line-height: 1.3">« Un excellent accompagnement pour ma fille de 8 ans qui avait des problèmes d'anxiété et difficultés d'endormissement. Après seulement 3 séances nous avons constaté la différence. »</blockquote>
+<figcaption style="font-size: 15px; color: #F0E4F7"><strong style="color: #FFFFFF">Kassandra B.</strong> · Art-thérapie enfant · oct. 2026</figcaption>
+</figure>
+<div style="flex: 1 1 260px; background: #FFFFFF; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; justify-content: center; gap: 10px">
+<span style="font-family: 'Fraunces', serif; font-size: 64px; line-height: 1">4,9</span>
+<span style="color: #A8730E; letter-spacing: 3px; font-size: 20px" aria-label="5 étoiles sur 5">★★★★★</span>
+<span style="color: #4A3A52">71 avis Google</span>
+<a href="https://www.google.com/maps" style="font-weight: 600; padding-top: 8px">Lire les avis →</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" data-tint="#F1E9F7" data-tint-dark="#1F1429" style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 96px">
+<div style="background: #2B1B33; color: #F4EDF8; border-radius: 32px; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 40px; position: relative; overflow: hidden">
+<div class="am-blob" data-reveal-blob="" style="width: 360px; height: 360px; background: radial-gradient(circle, #8E3B76, rgba(142,59,118,0) 70%); top: -120px; left: -80px; opacity: .7"></div>
+<div style="position: relative; flex: 1 1 360px; display: flex; flex-direction: column; gap: 18px">
+<h2 data-reveal="" style="margin: 0; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.1; color: #FFFFFF">Prendre <span style="font-style: italic; color: #E8C9F2">rendez-vous</span></h2>
+<p style="margin: 0; color: #DED2E5">Réservez en ligne, appelez-moi, ou laissez un message : je vous réponds personnellement.</p>
+<a href="https://www.resalib.fr" style="background: #FFFFFF; color: #2B1B33; text-decoration: none; text-align: center; padding: 16px 24px; border-radius: 999px; font-weight: 700">Voir les créneaux disponibles</a>
+<a href="tel:+33674352677" style="color: #FFFFFF; font-size: 22px; font-family: 'Fraunces', serif">06 74 35 26 77</a>
+<span style="font-size: 15px; color: #C9BBD1">34 chemin de la Revirée, 38240 Meylan · <a href="infos.html" style="color: #FFFFFF">Horaires et accès</a></span>
+</div>
+<form id="am-form" style="position: relative; flex: 1 1 400px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 14px">
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px">Nom<input name="nom" required type="text" autocomplete="name" style="background: #3B2B44; border: 1px solid #5D4C66; border-radius: 12px; padding: 12px 14px; color: #FFFFFF; min-height: 44px; box-sizing: border-box"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px">Téléphone<input name="tel" type="tel" autocomplete="tel" style="background: #3B2B44; border: 1px solid #5D4C66; border-radius: 12px; padding: 12px 14px; color: #FFFFFF; min-height: 44px; box-sizing: border-box"></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 15px">Message<textarea name="message" required rows="4" style="background: #3B2B44; border: 1px solid #5D4C66; border-radius: 12px; padding: 12px 14px; color: #FFFFFF; resize: vertical"></textarea></label>
+<button type="submit" style="background: linear-gradient(100deg, #E8C9F2, #F4B9A0); color: #2B1B33; border: 0; border-radius: 999px; padding: 15px 24px; font-weight: 700; font-size: 17px; min-height: 48px">Envoyer mon message</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #2B1B33; color: #DED2E5">
+<div style="max-width: 1240px; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+<p style="margin: 0; font-family: 'Fraunces', serif; font-weight: 400; font-size: clamp(2.2rem, 5vw, 4.2rem); line-height: 1.05; background: linear-gradient(90deg, #B48AE0, #E59BC0 50%, #F4B9A0); -webkit-background-clip: text; background-clip: text; color: transparent">La couleur de votre vie.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 28px 64px; font-size: 15px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 6px">
+<strong style="color: #FFFFFF">Agnieszka Mulak</strong>
+<span>Art-thérapeute certifiée · Formatrice CNPG</span>
+<span>Cabinet Viola, Espace Île des Couleurs, Meylan</span>
+</div>
+<nav aria-label="Pages" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+<a href="accompagnements.html" style="color: #DED2E5">Accompagnements &amp; tarifs</a>
+<a href="histoire.html" style="color: #DED2E5">Mon histoire &amp; FAQ</a>
+<a href="infos.html" style="color: #DED2E5">Infos pratiques</a>
+</nav>
+<nav aria-label="Réseaux" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+<a href="https://www.facebook.com" style="color: #DED2E5">Facebook</a>
+<a href="https://www.youtube.com" style="color: #DED2E5">YouTube</a>
+<a href="https://www.linkedin.com" style="color: #DED2E5">LinkedIn</a>
+</nav>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; padding-top: 24px; border-top: 1px solid #4A3A52">
+<span>L'art-thérapie est un accompagnement complémentaire et ne remplace pas un suivi médical.</span>
+<span><a href="infos.html" style="color: #DED2E5">Mentions légales</a> · <a href="infos.html" style="color: #DED2E5">Confidentialité</a></span>
+</div>
+</div>
+</footer>
+
+</div>
+<script src="js/main.js" defer></script>
+</body>
+</html>
