@@ -107,8 +107,12 @@
       pts.push({ x: e.clientX, y: e.clientY, life: 1, c: palette[k], r: 4 + Math.random() * 5 });
       if (pts.length > 60) pts.shift();
     }, { passive: true });
-    (function loop() {
+    var running = false;
+    var kick = function () { if (!running) { running = true; requestAnimationFrame(loop); } };
+    window.addEventListener('pointermove', kick, { passive: true });
+    function loop() {
       ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      if (!pts.length) { running = false; return; }
       for (var i = pts.length - 1; i >= 0; i--) {
         var p = pts[i];
         p.life -= 0.025;
@@ -120,7 +124,7 @@
         ctx.fill();
       }
       requestAnimationFrame(loop);
-    })();
+    }
   }
 
   /* ---------- Quiz « Qu'est-ce qui vous amène ? » ---------- */
